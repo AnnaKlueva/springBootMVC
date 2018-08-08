@@ -1,0 +1,8 @@
+language: java
+deploy:
+  provider: heroku
+  api_key:
+    secure: "345d36a4-6b9a-47ad-8a59-b93601ac8f05"
+    app: WebApp-1.1
+  run: "mvn surefire:test -Dgroups=systemTest"
+  skip_cleanup: true
