@@ -1,0 +1,10 @@
+/Users/akliuieva/Desktop/SpringBoot/src/main/java/anna/klueva/config/DatabaseProperties.java
+/Users/akliuieva/Desktop/SpringBoot/src/main/java/anna/klueva/WebAppInitializer.java
+/Users/akliuieva/Desktop/SpringBoot/src/main/java/anna/klueva/config/WebConfig.java
+/Users/akliuieva/Desktop/SpringBoot/src/main/java/anna/klueva/Dog.java
+/Users/akliuieva/Desktop/SpringBoot/src/main/java/anna/klueva/DogController.java
+/Users/akliuieva/Desktop/SpringBoot/src/main/java/anna/klueva/errorHandling/FieldErrorDTO.java
+/Users/akliuieva/Desktop/SpringBoot/src/main/java/anna/klueva/errorHandling/RestErrorHandler.java
+/Users/akliuieva/Desktop/SpringBoot/src/main/java/anna/klueva/config/RootConfig.java
+/Users/akliuieva/Desktop/SpringBoot/src/main/java/anna/klueva/errorHandling/ValidationErrorDTO.java
+/Users/akliuieva/Desktop/SpringBoot/src/main/java/anna/klueva/dao/DogDAO.java

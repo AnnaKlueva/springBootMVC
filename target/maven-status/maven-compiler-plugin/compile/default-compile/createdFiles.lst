@@ -1,0 +1,12 @@
+anna/klueva/config/WebConfig.class
+META-INF/spring-configuration-metadata.json
+anna/klueva/Dog$DogBuilder.class
+anna/klueva/errorHandling/FieldErrorDTO.class
+anna/klueva/DogController.class
+anna/klueva/dao/DogDAO.class
+anna/klueva/WebAppInitializer.class
+anna/klueva/config/DatabaseProperties.class
+anna/klueva/errorHandling/RestErrorHandler.class
+anna/klueva/errorHandling/ValidationErrorDTO.class
+anna/klueva/Dog.class
+anna/klueva/config/RootConfig.class

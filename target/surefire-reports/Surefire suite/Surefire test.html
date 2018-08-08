@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 30 17:22:16 EEST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>42 seconds (42443 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>dbTest unitTest restApi </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DogControllerTest.testCreateDogMethod()'><b>testCreateDogMethod</b><br>Test class: DogControllerTest</td>
+<td></td>
+<td>2</td>
+<td>DogControllerTest@7bedc48a</td></tr>
+<tr>
+<td title='DogControllerTest.testDeleteDogMethod()'><b>testDeleteDogMethod</b><br>Test class: DogControllerTest</td>
+<td></td>
+<td>0</td>
+<td>DogControllerTest@7bedc48a</td></tr>
+<tr>
+<td title='DogControllerTest.testGetAllDogsMethod()'><b>testGetAllDogsMethod</b><br>Test class: DogControllerTest</td>
+<td></td>
+<td>0</td>
+<td>DogControllerTest@7bedc48a</td></tr>
+<tr>
+<td title='DogControllerTest.testGetDogByIdMethod()'><b>testGetDogByIdMethod</b><br>Test class: DogControllerTest</td>
+<td></td>
+<td>0</td>
+<td>DogControllerTest@7bedc48a</td></tr>
+<tr>
+<td title='DogControllerTest.testUpdateDogMethod()'><b>testUpdateDogMethod</b><br>Test class: DogControllerTest</td>
+<td></td>
+<td>0</td>
+<td>DogControllerTest@7bedc48a</td></tr>
+<tr>
+<td title='DogDAOTest.verifyAddDogRequest_200Ok()'><b>verifyAddDogRequest_200Ok</b><br>Test class: DogDAOTest</td>
+<td></td>
+<td>0</td>
+<td>DogDAOTest@6ad82709</td></tr>
+<tr>
+<td title='DogDAOTest.verifyAddDogRequest_404BadRequest()'><b>verifyAddDogRequest_404BadRequest</b><br>Test class: DogDAOTest</td>
+<td></td>
+<td>1</td>
+<td>DogDAOTest@6ad82709</td></tr>
+<tr>
+<td title='DogDAOTest.verifyDeleteRequest_200Ok()'><b>verifyDeleteRequest_200Ok</b><br>Test class: DogDAOTest</td>
+<td></td>
+<td>0</td>
+<td>DogDAOTest@6ad82709</td></tr>
+<tr>
+<td title='DogDAOTest.verifyDeleteRequest_400NotFound()'><b>verifyDeleteRequest_400NotFound</b><br>Test class: DogDAOTest</td>
+<td></td>
+<td>0</td>
+<td>DogDAOTest@6ad82709</td></tr>
+<tr>
+<td title='DBTest.verifyFindAllItems()'><b>verifyFindAllItems</b><br>Test class: DBTest</td>
+<td></td>
+<td>1</td>
+<td>DBTest@37ceb1df</td></tr>
+<tr>
+<td title='DogDAOTest.verifyFindAll_EmptyDB()'><b>verifyFindAll_EmptyDB</b><br>Test class: DogDAOTest</td>
+<td></td>
+<td>0</td>
+<td>DogDAOTest@6ad82709</td></tr>
+<tr>
+<td title='DogDAOTest.verifyGetAllRequest()'><b>verifyGetAllRequest</b><br>Test class: DogDAOTest</td>
+<td></td>
+<td>0</td>
+<td>DogDAOTest@6ad82709</td></tr>
+<tr>
+<td title='DBTest.verifyGetByIdNotFoundResponse()'><b>verifyGetByIdNotFoundResponse</b><br>Test class: DBTest</td>
+<td></td>
+<td>0</td>
+<td>DBTest@37ceb1df</td></tr>
+<tr>
+<td title='DogDAOTest.verifyGetByIdRequestNotFoundEntry_ShouldReturnHttpStatusCode404()'><b>verifyGetByIdRequestNotFoundEntry_ShouldReturnHttpStatusCode404</b><br>Test class: DogDAOTest</td>
+<td></td>
+<td>0</td>
+<td>DogDAOTest@6ad82709</td></tr>
+<tr>
+<td title='DBTest.verifyGetByIdRequestOkResponse()'><b>verifyGetByIdRequestOkResponse</b><br>Test class: DBTest</td>
+<td></td>
+<td>0</td>
+<td>DBTest@37ceb1df</td></tr>
+<tr>
+<td title='DogDAOTest.verifyGetByIdRequestOkResponse()'><b>verifyGetByIdRequestOkResponse</b><br>Test class: DogDAOTest</td>
+<td></td>
+<td>0</td>
+<td>DogDAOTest@6ad82709</td></tr>
+<tr>
+<td title='DBTest.verifySaveItemToDB()'><b>verifySaveItemToDB</b><br>Test class: DBTest</td>
+<td></td>
+<td>0</td>
+<td>DBTest@37ceb1df</td></tr>
+<tr>
+<td title='DogDAOTest.verifyUpdateRequest_200Ok()'><b>verifyUpdateRequest_200Ok</b><br>Test class: DogDAOTest</td>
+<td></td>
+<td>0</td>
+<td>DogDAOTest@6ad82709</td></tr>
+<tr>
+<td title='DogDAOTest.verifyUpdateRequest_404NotFound()'><b>verifyUpdateRequest_404NotFound</b><br>Test class: DogDAOTest</td>
+<td></td>
+<td>0</td>
+<td>DogDAOTest@6ad82709</td></tr>
+</table><p>
+</body>
+</html>

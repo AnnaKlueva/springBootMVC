@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="19" passed="19">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="42443" started-at="2018-04-30T14:22:16Z" finished-at="2018-04-30T14:22:59Z">
+    <groups>
+      <group name="dbTest">
+        <method signature="DBTest.verifyFindAllItems()[pri:0, instance:DBTest@37ceb1df]" name="verifyFindAllItems" class="DBTest"/>
+        <method signature="DBTest.verifyGetByIdNotFoundResponse()[pri:0, instance:DBTest@37ceb1df]" name="verifyGetByIdNotFoundResponse" class="DBTest"/>
+        <method signature="DBTest.verifyGetByIdRequestOkResponse()[pri:0, instance:DBTest@37ceb1df]" name="verifyGetByIdRequestOkResponse" class="DBTest"/>
+        <method signature="DBTest.verifySaveItemToDB()[pri:0, instance:DBTest@37ceb1df]" name="verifySaveItemToDB" class="DBTest"/>
+      </group> <!-- dbTest -->
+      <group name="unitTest">
+        <method signature="DogControllerTest.testCreateDogMethod()[pri:0, instance:DogControllerTest@7bedc48a]" name="testCreateDogMethod" class="DogControllerTest"/>
+        <method signature="DogControllerTest.testDeleteDogMethod()[pri:0, instance:DogControllerTest@7bedc48a]" name="testDeleteDogMethod" class="DogControllerTest"/>
+        <method signature="DogControllerTest.testGetAllDogsMethod()[pri:0, instance:DogControllerTest@7bedc48a]" name="testGetAllDogsMethod" class="DogControllerTest"/>
+        <method signature="DogControllerTest.testGetDogByIdMethod()[pri:0, instance:DogControllerTest@7bedc48a]" name="testGetDogByIdMethod" class="DogControllerTest"/>
+        <method signature="DogControllerTest.testUpdateDogMethod()[pri:0, instance:DogControllerTest@7bedc48a]" name="testUpdateDogMethod" class="DogControllerTest"/>
+      </group> <!-- unitTest -->
+      <group name="restApi">
+        <method signature="DogDAOTest.verifyAddDogRequest_200Ok()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyAddDogRequest_200Ok" class="DogDAOTest"/>
+        <method signature="DogDAOTest.verifyAddDogRequest_404BadRequest()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyAddDogRequest_404BadRequest" class="DogDAOTest"/>
+        <method signature="DogDAOTest.verifyDeleteRequest_200Ok()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyDeleteRequest_200Ok" class="DogDAOTest"/>
+        <method signature="DogDAOTest.verifyDeleteRequest_400NotFound()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyDeleteRequest_400NotFound" class="DogDAOTest"/>
+        <method signature="DogDAOTest.verifyFindAll_EmptyDB()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyFindAll_EmptyDB" class="DogDAOTest"/>
+        <method signature="DogDAOTest.verifyGetAllRequest()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyGetAllRequest" class="DogDAOTest"/>
+        <method signature="DogDAOTest.verifyGetByIdRequestNotFoundEntry_ShouldReturnHttpStatusCode404()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyGetByIdRequestNotFoundEntry_ShouldReturnHttpStatusCode404" class="DogDAOTest"/>
+        <method signature="DogDAOTest.verifyGetByIdRequestOkResponse()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyGetByIdRequestOkResponse" class="DogDAOTest"/>
+        <method signature="DogDAOTest.verifyUpdateRequest_200Ok()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyUpdateRequest_200Ok" class="DogDAOTest"/>
+        <method signature="DogDAOTest.verifyUpdateRequest_404NotFound()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyUpdateRequest_404NotFound" class="DogDAOTest"/>
+      </group> <!-- restApi -->
+    </groups>
+    <test name="Surefire test" duration-ms="42443" started-at="2018-04-30T14:22:16Z" finished-at="2018-04-30T14:22:59Z">
+      <class name="DogDAOTest">
+        <test-method status="PASS" signature="verifyAddDogRequest_200Ok()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyAddDogRequest_200Ok" duration-ms="873" started-at="2018-04-30T17:22:55Z" finished-at="2018-04-30T17:22:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddDogRequest_200Ok -->
+        <test-method status="PASS" signature="verifyAddDogRequest_404BadRequest()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyAddDogRequest_404BadRequest" duration-ms="1081" started-at="2018-04-30T17:22:56Z" finished-at="2018-04-30T17:22:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddDogRequest_404BadRequest -->
+        <test-method status="PASS" signature="verifyDeleteRequest_200Ok()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyDeleteRequest_200Ok" duration-ms="161" started-at="2018-04-30T17:22:57Z" finished-at="2018-04-30T17:22:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteRequest_200Ok -->
+        <test-method status="PASS" signature="verifyDeleteRequest_400NotFound()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyDeleteRequest_400NotFound" duration-ms="280" started-at="2018-04-30T17:22:57Z" finished-at="2018-04-30T17:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteRequest_400NotFound -->
+        <test-method status="PASS" signature="verifyFindAll_EmptyDB()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyFindAll_EmptyDB" duration-ms="166" started-at="2018-04-30T17:22:58Z" finished-at="2018-04-30T17:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFindAll_EmptyDB -->
+        <test-method status="PASS" signature="verifyGetAllRequest()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyGetAllRequest" duration-ms="338" started-at="2018-04-30T17:22:58Z" finished-at="2018-04-30T17:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetAllRequest -->
+        <test-method status="PASS" signature="verifyGetByIdRequestNotFoundEntry_ShouldReturnHttpStatusCode404()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyGetByIdRequestNotFoundEntry_ShouldReturnHttpStatusCode404" duration-ms="245" started-at="2018-04-30T17:22:58Z" finished-at="2018-04-30T17:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetByIdRequestNotFoundEntry_ShouldReturnHttpStatusCode404 -->
+        <test-method status="PASS" signature="verifyGetByIdRequestOkResponse()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyGetByIdRequestOkResponse" duration-ms="47" started-at="2018-04-30T17:22:58Z" finished-at="2018-04-30T17:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetByIdRequestOkResponse -->
+        <test-method status="PASS" signature="verifyUpdateRequest_200Ok()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyUpdateRequest_200Ok" duration-ms="289" started-at="2018-04-30T17:22:59Z" finished-at="2018-04-30T17:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateRequest_200Ok -->
+        <test-method status="PASS" signature="verifyUpdateRequest_404NotFound()[pri:0, instance:DogDAOTest@6ad82709]" name="verifyUpdateRequest_404NotFound" duration-ms="76" started-at="2018-04-30T17:22:59Z" finished-at="2018-04-30T17:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateRequest_404NotFound -->
+      </class> <!-- DogDAOTest -->
+      <class name="DBTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:DBTest@37ceb1df]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="12" started-at="2018-04-30T17:22:16Z" finished-at="2018-04-30T17:22:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:DBTest@37ceb1df]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="34558" started-at="2018-04-30T17:22:16Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2018-04-30T17:22:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:DBTest@37ceb1df]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="2" started-at="2018-04-30T17:22:51Z" finished-at="2018-04-30T17:22:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DBTest.verifyFindAllItems() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="verifyFindAllItems()[pri:0, instance:DBTest@37ceb1df]" name="verifyFindAllItems" duration-ms="1782" started-at="2018-04-30T17:22:51Z" finished-at="2018-04-30T17:22:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFindAllItems -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:DBTest@37ceb1df]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2018-04-30T17:22:53Z" finished-at="2018-04-30T17:22:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DBTest.verifyFindAllItems() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:DBTest@37ceb1df]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="4" started-at="2018-04-30T17:22:53Z" finished-at="2018-04-30T17:22:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DBTest.verifyGetByIdNotFoundResponse() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="verifyGetByIdNotFoundResponse()[pri:0, instance:DBTest@37ceb1df]" name="verifyGetByIdNotFoundResponse" duration-ms="87" started-at="2018-04-30T17:22:53Z" finished-at="2018-04-30T17:22:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetByIdNotFoundResponse -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:DBTest@37ceb1df]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2018-04-30T17:22:53Z" finished-at="2018-04-30T17:22:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DBTest.verifyGetByIdNotFoundResponse() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:DBTest@37ceb1df]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2018-04-30T17:22:53Z" finished-at="2018-04-30T17:22:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DBTest.verifyGetByIdRequestOkResponse() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="verifyGetByIdRequestOkResponse()[pri:0, instance:DBTest@37ceb1df]" name="verifyGetByIdRequestOkResponse" duration-ms="47" started-at="2018-04-30T17:22:53Z" finished-at="2018-04-30T17:22:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetByIdRequestOkResponse -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:DBTest@37ceb1df]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2018-04-30T17:22:53Z" finished-at="2018-04-30T17:22:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DBTest.verifyGetByIdRequestOkResponse() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:DBTest@37ceb1df]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2018-04-30T17:22:53Z" finished-at="2018-04-30T17:22:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DBTest.verifySaveItemToDB() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="verifySaveItemToDB()[pri:0, instance:DBTest@37ceb1df]" name="verifySaveItemToDB" duration-ms="12" started-at="2018-04-30T17:22:53Z" finished-at="2018-04-30T17:22:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySaveItemToDB -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:DBTest@37ceb1df]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2018-04-30T17:22:53Z" finished-at="2018-04-30T17:22:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:DBTest@37ceb1df]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2018-04-30T17:22:53Z" finished-at="2018-04-30T17:22:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DBTest.verifySaveItemToDB() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+      </class> <!-- DBTest -->
+      <class name="DogControllerTest">
+        <test-method status="PASS" signature="testCreateDogMethod()[pri:0, instance:DogControllerTest@7bedc48a]" name="testCreateDogMethod" duration-ms="2303" started-at="2018-04-30T17:22:53Z" finished-at="2018-04-30T17:22:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateDogMethod -->
+        <test-method status="PASS" signature="testDeleteDogMethod()[pri:0, instance:DogControllerTest@7bedc48a]" name="testDeleteDogMethod" duration-ms="6" started-at="2018-04-30T17:22:55Z" finished-at="2018-04-30T17:22:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteDogMethod -->
+        <test-method status="PASS" signature="testGetDogByIdMethod()[pri:0, instance:DogControllerTest@7bedc48a]" name="testGetDogByIdMethod" duration-ms="2" started-at="2018-04-30T17:22:55Z" finished-at="2018-04-30T17:22:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDogByIdMethod -->
+        <test-method status="PASS" signature="testGetAllDogsMethod()[pri:0, instance:DogControllerTest@7bedc48a]" name="testGetAllDogsMethod" duration-ms="0" started-at="2018-04-30T17:22:55Z" finished-at="2018-04-30T17:22:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAllDogsMethod -->
+        <test-method status="PASS" signature="testUpdateDogMethod()[pri:0, instance:DogControllerTest@7bedc48a]" name="testUpdateDogMethod" duration-ms="1" started-at="2018-04-30T17:22:55Z" finished-at="2018-04-30T17:22:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateDogMethod -->
+      </class> <!-- DogControllerTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

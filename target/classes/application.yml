@@ -1,0 +1,36 @@
+spring:
+  profiles:
+    active: "dev"
+---
+spring:
+  profiles: test
+mydbpath: src/main/webapp/WEB-INF/database/dashboard/db
+database:
+  dbDriver: org.hsqldb.jdbc.JDBCDriver
+  username: SA
+  password:
+  url: jdbc:hsqldb:file:${mydbpath}/embeddedDogDB
+  additionalPropertiesFilename: embeddedJPA.properties
+---
+
+spring:
+  profiles: production
+database:
+  dbDriver: org.postgresql.Driver
+  username: postgres
+  password: 1111
+  url: jdbc:postgresql://localhost:5432/RemoteDogDB
+  additionalPropertiesFilename: remotePostgresJPA.properties
+---
+
+spring:
+  profiles: dev
+database:
+  dbDriver: org.hsqldb.jdbc.JDBCDriver
+  username: SA
+  password:
+  url: jdbc:hsqldb:mem:DogDB?createDatabaseIfNotExist=true
+  additionalPropertiesFilename: inmemJPA.properties
+---
+
+
